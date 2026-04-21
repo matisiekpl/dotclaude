@@ -6,4 +6,6 @@ Do NOT add any comments.
 
 Don't use shortened names. For example, instead of `orgId`, write `organizationId`.
 
+In plan, skip Verification section.
 
+When executing Plan, ALWAYS show steps list in Claude Code.
