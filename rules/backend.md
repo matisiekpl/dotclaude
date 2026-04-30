@@ -1100,3 +1100,6 @@ vendor/
 - Don't run or compile application - developer will do that manually. Only write code.
 - Use git semantic names commit messages. Example prefixes are `chore:`, `feat:`, `fix:`...
 - Don't use any `git` commands - don't commit anything.
+- When you're dealing with some data objects that comes from external APIs (for example server does the HTTP request and need to parse JSON response), put structs for parsing those objects into `dto` - not inside `client` package
+- Avoid making functions not bound to some struct (indeed context). You can make raw functions, but only when it is really needed (for example it is not bound to any domain and it is very generic).
+- Apply following rules not only to Go, but use them as guideline for implementing APIs in other languages such as Rust, Python etc. Keep in mind to still follow Language-specific guidelines (they take precedence over rules described here).
